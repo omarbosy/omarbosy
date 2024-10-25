@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="../CSS/bootstrap.min.css.map">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <title>Task-11</title>
+</head>
+
+<body>
+  <!-- =================================header====================================== -->
+
+
+
+  <header>
+    <div class="topAlert bg-danger text-center text-white top-nav">
+      <p class="py-3">Get your first course at 50% Discount.
+        Offer lasts for the first 50 students only.
+        <a class="text-white" href="">Register now</a>
+      </p>
+    </div>
+
+    <header>
+
+      <nav class="navbar bg navbar-expand-lg pb-4  bg-white">
+        <div class="container-fluid px-5">
+          <img src="../IMAGES/logo.png" alt="" style="cursor: pointer;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse fw-bolder text-uppercase" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll gap-4 mx-auto"
+              style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" style="color: #4CC082;" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown hover-nav">
+                <a class=" show nav-link dropdown-toggle text-black " href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Pages
+
+                </a>
+
+                <ul class="dropdown-menu" onclick="apear()" id="appear" data-bs-propper="static"
+                  aria-labelledby="pages">
+                  <li class="py-1"><a class="dropdown-item fw-bold" href="#">introduction <span
+                        class=" top-nav bg-danger text-white rounded-3 px-2 pb-1"
+                        style="font-size: 13px;">pro</span></a></li>
+                  <li class="py-1"><a class="dropdown-item fw-bold" href="#">cart <span
+                        class="bg-danger text-white rounded-3 px-2 pb-1 top-nav" style="font-size: 13px;">pro</span></a>
+                  </li>
+                  <li class="py-1"><a class="dropdown-item fw-bold" href="#">wishlist <span
+                        class="bg-danger text-white rounded-3 px-2 pb-1 top-nav" style="font-size: 13px;">pro</span></a>
+                  </li>
+                  <li class="py-1"><a class="dropdown-item fw-bold" href="#">checkout <span
+                        class="bg-danger text-white rounded-3 px-2 pb-1 top-nav" style="font-size: 13px;">pro</span></a>
+                  </li>
+                  <li class="py-1"><a class="dropdown-item fw-bold" href="#">priceplan <span
+                        class="bg-danger text-white rounded-3 px-2 pb-1 top-nav" style="font-size: 13px;">pro</span></a>
+                  </li>
+                  <li class="py-1"><a class="dropdown-item fw-bold" href="#">contact <span
+                        class="bg-danger text-white rounded-3 px-2 pb-1 top-nav" style="font-size: 13px;">pro</span></a>
+                  </li>
+                  <li class="py-1"><a class="dropdown-item fw-bold" href="#">faqs <span
+                        class="bg-danger text-white rounded-3 px-2 pb-1 top-nav" style="font-size: 13px;">pro</span></a>
+                  </li>
+                  <li class="py-1"><a class="dropdown-item fw-bold" href="#">account <span
+                        class="bg-danger text-white rounded-3 px-2 pb-1 top-nav" style="font-size: 13px;">pro</span></a>
+                  </li>
+                  <li class="py-1"><a class="dropdown-item fw-bold" href="#">thankyou <span
+                        class="bg-danger text-white rounded-3 px-2 pb-1 top-nav" style="font-size: 13px;">pro</span></a>
+                  </li>
+                  <li class="py-1"><a class="dropdown-item fw-bold" href="#">error 404 <span
+                        class="bg-danger text-white rounded-3 px-2 pb-1 top-nav" style="font-size: 13px;">pro</span></a>
+                  </li>
+                  <li class="py-1"><a class="dropdown-item fw-bold" href="#">styles <span
+                        class="bg-danger text-white rounded-3 px-2 pb-1 top-nav" style="font-size: 13px;">pro</span></a>
+                  </li>
+                  <li class="py-1"><a class="dropdown-item fw-bold" href="#">About us <span
+                        class="bg-danger text-white rounded-3 px-2 pb-1 top-nav" style="font-size: 13px;">pro</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown hover-nav">
+                <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  courses
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="py-1"><a class="dropdown-item fw-bold" href="#">course <span
+                        class="bg-danger text-white rounded-3 px-2 pb-1 top-nav" style="font-size: 13px;">pro</span></a>
+                  </li>
+                  <li class="py-1"><a class="dropdown-item fw-bold" href="#">courses detail <span
+                        class="bg-danger text-white rounded-3 px-2 pb-1 top-nav" style="font-size: 13px;">pro</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown hover-nav">
+                <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Events
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="py-1"><a class="dropdown-item fw-bold" href="#">Event <span
+                        class="bg-danger text-white rounded-3 px-2 pb-1 top-nav" style="font-size: 13px;">pro</span></a>
+                  </li>
+                  <li class="py-1"><a class="dropdown-item fw-bold" href="#">Events detail <span
+                        class="bg-danger text-white rounded-3 px-2 pb-1 top-nav" style="font-size: 13px;">pro</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown hover-nav">
+                <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  blog
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="py-1"><a class="dropdown-item fw-bold" href="#">blog <span
+                        class="bg-danger text-white rounded-3 px-2 pb-1 top-nav" style="font-size: 13px;">pro</span></a>
+                  </li>
+                  <li class="py-1"><a class="dropdown-item fw-bold" href="#">single post <span
+                        class="bg-danger text-white rounded-3 px-2 pb-1 top-nav" style="font-size: 13px;">pro</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown hover-nav">
+                <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  shop
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="py-1"><a class="dropdown-item fw-bold" href="#">shop <span
+                        class="bg-danger text-white rounded-3 px-2 pb-1 top-nav" style="font-size: 13px;">pro</span></a>
+                  </li>
+                  <li class="py-1"><a class="dropdown-item fw-bold" href="#">single product <span
+                        class="bg-danger text-white rounded-3 px-2 pb-1 top-nav" style="font-size: 13px;">pro</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item hover-nav">
+                <a class="nav-link text-black" href="#">Contact</a>
+              </li>
+              <li class="nav-item hover-nav" style="padding-top:7px">
+                <a class=" text-black" href="#">Get Pro</a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="social fs-5">
+            <img src="../IMAGES/user.png" style="width:20px ;margin:7px;cursor: pointer;">
+            <img src="../IMAGES/shopping-bag.png" style="width:20px ;margin:7px ;cursor: pointer;">
+            <img src="../IMAGES/heart (2).png" style="width:20px ;margin:px ;cursor: pointer;">
+            <img src="../IMAGES/search-interface-symbol.png" style="width:20px ;margin:7px ;cursor: pointer;">
+          </div>
+        </div>
+      </nav>
+
+
+    </header>
+    <!-- ===================================EndHeader====================================== -->
+
+
+    <!--  ======================================FirstSection=================================-->
+    <section>
+      
+      <div class="con">
+        <p class="text-uppercase first-p" style="font-size: 80px;"> Master Your <br>Skills Online</p>
+        <p class="text-uppercase second-p" style="font-size: 22px;"> Online Courses Taught by Industry Titans!</p>
+        
+        
+        <img class="billboard-img" src="../IMAGES/billboard-img.png">
+        <div class="inputt">
+          <input placeholder="what are you trying to learn?" >
+          <div class="buttonn">
+            <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  
+  <!--  ====================================== endFirstSection=================================-->
+  <!-- cardsSection -->
+  <div class="cardds">
+  
+  <div class="cards">
+    <div class="card"><p class="p1" >100+</p> <p class="p2">INSTRUCTORS</p></div>
+    <div class="card"><p class="p1">500+</p> <p class="p2">COURSES</p></div>
+    <div class="card"><p class="p1"> FREE </p><p class="p2">CERTIFICATIONS </p></div>
+    <div class="card"><p class="p1">2,000+ </p> <p class="p2">HAPPY MEMBER</p> </div>
+  </div>
+</div>`
+  <!-- endCardsSection -->
+  <!-- ========================================secondSection =================================-->
+
+<div class="contain">
+  <img class="rounded-circle" src="../IMAGES/download.jpg" alt="">
+<div class="right-part">
+<p class="text">Learn more about us</p>
+<h1>About Us</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+   Dolorem <br>molestiae nam commodi dolore vitae? Numquam minima cum asperiores <br>
+   deleniti possimus provident, officia itaque esse eius, delectus incidunt<br> 
+   laudantium adipisci laboriosam!<br><br></p>
+   <p>Engage with a worldwide community of inquisitive and imaginative<br> individuals<br>.
+
+    Learn a skill of your choice from the experts around the world from various <br>industries<br>
+    
+    Learn a skill of your choice from the experts around the world from various <br> industries</p>
+    <a class="btn " > <p>LEARN MORE </p></a>
+  </div>
+
+
+
+
+</div>
+
+<!-- ======================================endSecondSection =================================-->
+<!--  ===================================thirdSection  ========================================-->
+     <div class="container">
+      <p class="text">Pick your niche and get started</p>
+      <h2>Popular Categories</h2>
+      <a class="btn" >VIEW ALL CATEGORIES</a>
+     
+      <div class="  cards2">
+        <div class="card new-card card1 " >
+          <img  src="../IMAGES/graphic-design.png" style="width:50px;height:50px;margin: auto;" alt="">
+        </div>
+        <div class="card new-card card2 ">
+          <img  src="../IMAGES/camera.png" style="width:50px;height:50px;margin: auto;" alt="">
+
+        </div>
+        <div class="card new-card card3  cards2 ">
+          <img  src="../IMAGES/audio-control.png" style="width:50px;height:50px;margin: auto;" alt="">
+
+        </div>
+       
+      </div>
+      <div class=" cards2">
+        <div class="card new-card card4  cards2 ">
+          <img  src="../IMAGES/audio-control.png" style="width:50px;height:50px;margin: auto;" alt="">
+
+        </div>
+        <div class="card new-card card5">
+          <img  src="../IMAGES/computer-science.png" style="width:50px;height:50px;margin: auto;" alt="">
+
+        </div>
+        <div class="card new-card card6 ">
+          <img  src="../IMAGES/graphic-design.png" style="width:50px;height:50px;margin: auto;" alt="">
+
+        </div>
+       
+      </div>
+      <div class=" cards2">
+        <div class="card new-card card7">
+        <img  src="../IMAGES/dealing.png" style="width:50px;height:50px;margin: auto;" alt="">
+      </div>
+        <div class="card new-card card8  cards2">
+          <img  src="../IMAGES/bar-bell.png" style="width:50px;height:50px;margin: auto;" alt="">
+
+        </div>
+        <div class="card new-card card9">
+          <img  src="../IMAGES/graphic-design.png" style="width:50px;height:50px;margin: auto;" alt="">
+
+        </div>
+       
+      </div>
+</div>
+
+     <!--================================ endThirdSection========================================  -->
+     <!--============================== fouthSection================================= -->
+     <div  style="margin-top:100px " class="container text-center">
+      <p class="text ">Some of our most popular online courses</p>
+      <h2>Explore Inspiring Online Courses</h2>
+    <div class="fourthSectionCard">
+      <div class="card  " style=" box-shadow: inset; width: 18rem;">
+        <div class="shadow p-3 mb-5 bg-white rounded">
+        <img class="card-img-top" src="../IMAGES/item1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Digital Marketing</h5>
+          <p class="card-text ">Mastering the Art of Digital Communication</p>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div class="fourthSectionCard">
+      <div class="card   " style=" box-shadow: inset; width: 18rem;">
+        <div class="shadow p-3 mb-5 bg-white rounded">
+        <img class="card-img-top" src="../IMAGES/item2.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Digital Marketing</h5>
+          <p class="card-text ">Web Wizardry 101: Mastering the Internet</p>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="fourthSectionCard">
+      <div class="card  " style=" box-shadow: inset; width: 18rem;">
+        <div class="shadow p-3 mb-5 bg-white rounded">
+        <img class="card-img-top" src="../IMAGES/item3.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Digital Marketing</h5>
+          <p class="card-text ">E-Learning Essentials: A Comprehensive Guide</p>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="fourthSectionCard">
+      <div class="card  " style=" box-shadow: inset; width: 18rem;">
+        <div class="shadow p-3 mb-5 bg-white rounded">
+        <img class="card-img-top" src="../IMAGES/item4.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Digital Marketing</h5>
+          <p class="card-text ">CyberClass 101: A Guide to Online Education</p>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="fourthSectionCard">
+      <div class="card  " style=" box-shadow: inset; width: 18rem;">
+        <div class="shadow p-3 mb-5 bg-white rounded">
+        <img class="card-img-top" src="../IMAGES/item5.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Digital Marketing</h5>
+          <p class="card-text ">Mastering the Art of Digital Communication</p>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="fourthSectionCard">
+      <div class="card  " style=" box-shadow: inset; width: 18rem;">
+        <div class="shadow p-3 mb-5 bg-white rounded">
+        <img class="card-img-top" src="../IMAGES/item6.jpg" alt="Card image cap">
+        <div class="card-body">
+         
+          <h5   class="card-title">Digital Marketing</h5>
+          <p class="card-text ">Web Wizardry 101: Mastering the Internet</p>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="fourthSectionCard">
+      <div class="card  " style=" box-shadow: inset; width: 18rem;">
+        <div class="shadow p-3 mb-5 bg-white rounded">
+        <img class="card-img-top" src="../IMAGES/item7.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Digital Marketing</h5>
+          <p class="card-text ">E-Learning Essentials: A Comprehensive Guide</p>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="fourthSectionCard">
+      <div class="card  " style=" box-shadow: inset; width: 18rem;">
+        <div class="shadow p-3 mb-5 bg-white rounded">
+        <img class="card-img-top" src="../IMAGES/item8.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Digital Marketing</h5>
+          <p class="card-text ">CyberClass 101: A Guide to Online Education</p>
+        </div>
+      </div>
+      </div>
+      </div>
+      <a class="btn fourthSectionBtn" >VIEW ALL COURSES</a>
+    </div>
+      
+      
+     <!--============================== endFouthSection================================= -->
+
+     <!--============================== fifthSection================================== -->
+     <!-- <div  style="margin-top:100px " class="container text-center">
+      <p class="text ">What our students say about us</p>
+      <h2>Reviews</h2> -->
+
+     
+
+
+
+
+
+
+
+     <!--============================== endFifthSection=============================== -->
+
+
+     <!--==============================sixthSection=============================== -->
+     <div  style="margin-top:100px " class="container text-center">
+      <p class="text ">Meet our popular teachers</p>
+      <h2>Our Teachers</h2>
+      <div class="fourthSectionCard sixthSectionCard">
+        <div class="card  " style=" box-shadow: inset; width: 14rem;">
+          <div class="shadow p-3 mb-5 bg-white rounded">
+          <img class="card-img-top" src="../IMAGES/teacher1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Bruce Smith </h5>
+            <p class="card-text ">Marketing Expert</p>
+          </div>
+        </div>
+      </div>
+        </div>
+      <div class="fourthSectionCard sixthSectionCard">
+        <div class="card  " style=" box-shadow: inset; width: 14rem;">
+          <div class="shadow p-3 mb-5 bg-white rounded">
+          <img class="card-img-top" src="../IMAGES/teacher2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Bruce Smith</h5>
+            <p class="card-text ">Marketing Expert</p>
+          </div>
+        </div>
+      </div>
+        </div>
+      <div class="fourthSectionCard sixthSectionCard">
+        <div class="card  " style=" box-shadow: inset; width: 14rem;">
+          <div class="shadow p-3 mb-5 bg-white rounded">
+          <img class="card-img-top" src="../IMAGES/teacher3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Jack Nicholson </h5>
+            <p class="card-text ">SEO Expert</p>
+          </div>
+        </div>
+      </div>
+        </div>
+      <div class="fourthSectionCard sixthSectionCard">
+        <div class="card  " style=" box-shadow: inset; width: 14rem;">
+          <div class="shadow p-3 mb-5 bg-white rounded">
+          <img class="card-img-top" src="../IMAGES/teacher4.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Calvin Ian</h5>
+            <p class="card-text ">Sales Director</p>
+          </div>
+        </div>
+      </div>
+        </div>
+      <div class="fourthSectionCard sixthSectionCard zoom-effect rounded-3 image-holder">
+        <div class="card  " style=" box-shadow: inset; width: 14rem ; ">
+          <div class="shadow p-3 mb-5 bg-white rounded  ">
+         
+          <img class=" card-img-top" src="../IMAGES/teacher5.jpg" alt="Card image cap" >
+          
+          <div class="card-body">
+            <h5 class="card-title">Milye Sam</h5>
+            <p class="card-text ">Marketing Expert</p>
+          </div>
+        </div>
+      </div>
+        </div>
+        </div>
+
+
+
+
+
+     <!--==============================endSixthSection=============================== -->
+
+
+     <!--==============================sevnthSection=============================== -->
+<div class="sevnth">
+     <div  style="margin-top:600px; " class="container text-center sevnthSection">
+      <p class="text ">What features we provideCore Features</p>
+      <h2>Core Features</h2>
+      <div  class="content">
+      <div class="content1">
+<p> <img src="../IMAGES/TRUE.png"> Engage with a worldwide community of inquisitive and imaginative<br> individuals.<br></p>
+<p> <img src="../IMAGES/TRUE.png">Engage with a worldwide community of inquisitive and imaginative <br>individuals.</p>
+
+</div>
+<div class="content2">
+<p><img src="../IMAGES/TRUE.png">Engage with a worldwide community of inquisitive and imaginative <br>individuals.</p>
+<p><img src="../IMAGES/TRUE.png">Engage with a worldwide community of inquisitive and imaginative<br> individuals.</p>
+</div>
+<div class="content3">
+  <p><img src="../IMAGES/TRUE.png">Engage with a worldwide community of inquisitive and imaginative<br> individuals.</p>
+  <p><img src="../IMAGES/TRUE.png">Engage with a worldwide community of inquisitive and imaginative <br>individuals.</p>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+     <!--==============================endSeventhSection=============================== -->
+
+
+     <!--==============================footer=============================== -->
+     <footer>
+      <div class=" container container-fluid px-5">
+        <img src="../IMAGES/logo.png" alt="" style="cursor: pointer;">
+      
+      <div class="Content">  
+        <div class="content-1">
+        <h4>Quick Links</h4>
+        <ul>
+          <li>Home</li>
+          <li>About us</li>
+          <li>Courses</li>
+          <li>Blogs</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+        <div class="content-2">
+            <h4>  About</h4>
+        <ul>
+          <li>How It Works</li>
+          <li>Pricing</li>
+          <li>Promotion</li>
+          <li> Affilation</li>
+        </ul>
+        </div>
+        <div class="content-3">
+        <h4>Help Center</h4>
+        <ul>
+          <li>Payments</li>
+          <li>FAQs</li>
+          <li> Checkout</li>
+          <li>Other</li>
+        </ul>
+        </div>
+        <div class="content-4">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>contact@yourcompany</li>
+          <li>+110 4587 2445</li>
+          <li> New York, USA</li>
+        </ul>
+      </div>
+      </div>
+
+
+    </div>
+     </footer>
+     <!--==============================endFooter=============================== -->
+
+
+
+
+    <script src="../JS/PRO.JS"></script>
+    <script src="../JS/bootstrap.bundle.js"></script>
+    <script src="../JS/bootstrap.bundle.js.map"></script>
+</body>
+
+</html>
